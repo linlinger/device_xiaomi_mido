@@ -26,7 +26,7 @@ PRODUCT_COMPRESSED_APEX := false
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -98,7 +98,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.1-impl:32 \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.msm8953:32 \
     audio.r_submix.default \
@@ -319,8 +318,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_mido
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_mido
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.livedisplay@2.0-service.xiaomi_mido
 
 # LMKD
 # Enable stats logging in LMKD
