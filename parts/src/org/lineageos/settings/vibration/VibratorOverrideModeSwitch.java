@@ -53,7 +53,7 @@ public class VibratorOverrideModeSwitch implements OnPreferenceChangeListener {
         final String key = preference.getKey();
         switch (key) {
             case VibratorSettings.PREF_VMAX_OVERRIDE_SWITCH:
-                FileUtils.setValue(VibratorSettings.VMAX_OVERRIDE_PATH, (int) value);
+                FileUtils.setValue(VibratorSettings.VMAX_OVERRIDE_PATH, (int) newValue);
                 break;
 
             default:
