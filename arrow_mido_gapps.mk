@@ -21,8 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common evolution stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common arrrow stuff.
+$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
+DEVICE_MAINTAINER := linlinger
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
