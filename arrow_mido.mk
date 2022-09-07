@@ -21,15 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# PixelExperience specific flags
+# Inherit some common evolution stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+# Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Custom stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_MINI_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := arrow_mido
+PRODUCT_NAME := evolution_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
@@ -39,7 +43,7 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.004 8836240 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220905.004 8927612 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220705.004/8836240:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys"
