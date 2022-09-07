@@ -29,11 +29,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Custom stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_MINI_GAPPS := true
+#TARGET_USES_MINI_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := evolution_mido
+PRODUCT_NAME := arrow_mido_valilla
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
