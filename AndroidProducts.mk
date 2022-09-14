@@ -14,9 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_mido.mk
+    $(LOCAL_DIR)/aosp_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_mido-user \
-    blaze_mido-userdebug \
-    blaze_mido-eng
+    aosp_mido-eng \
+    aosp_mido-user \
+    aosp_mido-userdebug
+
